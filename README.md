@@ -26,7 +26,7 @@ php/
     <tr>
       <td><b>Information</b></td>
       <td width="50%" rowspan="4">
-        <img alt="Photo" src="assets/images/my_photo_jpg.jpeg" />
+        <img src="assets/images/my_photo_jpg.jpeg"alt="Photo"  />
       </td>
     </tr>
     <tr>
