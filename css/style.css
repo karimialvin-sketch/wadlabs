@@ -2,3 +2,24 @@
 #features {
     background-color: beige;
 }
+body,header,h1,section {
+border-style: dotted;
+border-color: turquoise;
+border-width: 2px;
+
+}
+h1 {
+    /*longhand*/
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+/*shorthand*/
+    padding: 10px;
+    /*TRouBle*/
+    padding : 5px 10px 13px 50px;
+/*this applies to all sides*/
+    margin :5px;
+    
+
+}
