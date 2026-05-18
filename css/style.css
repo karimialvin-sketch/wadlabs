@@ -121,7 +121,7 @@ header h1{
 }
 /*direct child selector  selects only b elements that are direct children of header 
 */
-header > b {
+header  > b {
     color: var(--col-sunset);
     letter-spacing: 2px;
     font-size: 0.95em;
@@ -202,7 +202,7 @@ nav ul li{
         
         border-left-color: var(--col-cyan);
     }
-    p{
+    p ,h4 {
         color: var(--col-cream);
     }
     h5{
@@ -224,4 +224,28 @@ nav ul li{
         border-bottom-width: 2px;
      
     }
+    
+
+    main ul, main ol{
+        padding-left: 24px;
+        color: var(--col-cream) ;
+    }
+    main li{
+        margin-left: 4px
+    }
+    /* pseudo class selector (state) */
+    li :first-child{
+        color: var(--col-pink-soft);
+        font-weight: bold ;
+    }
+
+    /* pseudo element selector (part of an element) */
+    main  ul  li::marker{
+        color: var(--col-cyan); 
+    }
+
+    main ol li::marker{
+        color: var(--col-coral);
+    }
+    
     
