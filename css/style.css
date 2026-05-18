@@ -90,11 +90,13 @@ header{
     /*box model  padding */
    padding-top: 5px;
    padding-right: 20px;
+    padding-bottom: 20px;
    
   /*box model  border */
    border-bottom-width: 2px;
    border-bottom-style: solid;  
     border-bottom-color: var(--col-cyan);
+   
 
     text-align: center;
 } 
@@ -170,3 +172,56 @@ nav ul li{
         background-color: var(--col-cyan);
          border-color: var(--col-pink-soft);
     }
+    
+    main{
+/*resposive 0-960px*/
+    max-width: 960px;
+
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+    }
+    section{
+    margin-bottom: 30px;
+    padding: 32px;
+    background-color: var(--col-bg-light);
+    border-radius: 5px;
+    border-left-style: solid;
+    border-left-color: var(--col-coral);
+    border-left-width: 7px;
+    /*transitions */
+    transition-property: border-color;
+    transition-duration: 2s;
+    transition-timing-function: ease;
+    /*shorthand version of transition */
+    transition: border-color 2s ease;
+    }
+    section:hover{
+        
+        border-left-color: var(--col-cyan);
+    }
+    p{
+        color: var(--col-cream);
+    }
+    h5{
+        color: var(--col-amber);
+        
+    }
+    main b{
+        color: var(--col-coral);
+    
+    }
+    main i{
+        color: var(--col-cyan);
+    }
+    h2{
+        color : var(--col-sunset);
+        border-bottom: 2px solid var(--col-amber);
+        border-bottom-color: var(--col-amber);
+        border-bottom-style: solid;
+        border-bottom-width: 2px;
+     
+    }
+    
