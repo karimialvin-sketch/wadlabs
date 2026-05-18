@@ -113,7 +113,7 @@ header h1{
     color: var(--col-coral);
 
     margin-left: 8px;   
-    margin-bottom: 0;
+    margin-bottom:0;
     margin-right: 0;
     margin-top: 0;
 }
@@ -125,3 +125,48 @@ header > b {
     font-size: 0.95em;
 
 }
+
+nav{
+    margin-top:10px ;
+}
+/*what selector is this ?  it selects all ul elements that are descendants of nav */
+nav ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    /*change  the display of this element to flexbox */
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+/*what selector is this ?  it selects all li elements that are descendants of ul which are descendants of nav */
+/*instead of using this , what other way could we select the a tag given our elements in .index.html
+*/
+nav ul li{
+    color: var(--col-bg-deep);
+    text-decoration: none;
+    font-size: 1.1em;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+
+    /* what regions do each of the four padding areas have
+    padding-top?= 8px
+    padding-bottom?= 8px
+    padding-right?= 18px
+    padding-left?= 18px
+     */
+    padding: 8px 18px;
+    border: 1px solid var(--col-cyan-light);
+    /*long hand border rule*/
+     border-width: 1px;
+    border-style: solid;
+    border-color: var(--col-cyan-light); 
+    border-radius: 8px; 
+}
+
+/*pseudo- class selectors : hevor, :root */
+    nav ul li a:hover{
+        background-color: var(--col-cyan);
+         border-color: var(--col-pink-soft);
+    }
