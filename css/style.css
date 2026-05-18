@@ -263,3 +263,14 @@ nav ul li{
     hr{
         border:1px solid var(--col-cyan);
     }
+
+    /* character grid */
+    .character-grid{
+        display: grid;
+        grid-template-columns:1fr 1fr;
+        gap: 10px;
+    }
+    article h4 {
+        border-bottom: 2px solid var(--col-coral);
+    }
+       
