@@ -25,3 +25,16 @@ function calculateArea(height, width)
     return area;
   //console.log("Function calculateArea")
   //alert("function called /executed")
+  }
+}
+console.log (calculateArea(54, 10));
+console.log (calculateArea(5));
+console.log (calculateArea());
+
+const add= function add(number1, number2){
+    return number1 + number2;
+}
+console.log(add(5, 10));
+
+const multiply =(x, y) => x * y;
+console.log(multiply(5, 10));
