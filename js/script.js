@@ -137,8 +137,35 @@ console.log(Object.values(student));
 //getting the entries of an object as an array
 console.log(Object.entries(student));
 
+/*dom -document object model(treee-like)*/
+console.log(document);
 
 
+// elements on our page (variables )
+const heading = document.querySelector('#mainHeading');
+console.log(heading);
+
+const previewImage =document.querySelector('img');
+console.log(previewImage);
+
+const aboutsection = document.querySelector('#about');
+console.log(aboutsection);
+
+
+//all sections 
+const allsections = document.querySelectorAll('section');
+console.log(allsections);
+const allnavlinks =document.querySelectorAll('nav a');
+console.log(allnavlinks);
+
+
+//getting  an element
+
+let aboutparagraph = document.querySelector('#about p');
+
+//changing  its text
+aboutparagraph.textContent = " this text was changed!";
+aboutparagraph.style.color = "red";
 
 
 
