@@ -129,13 +129,13 @@ console.log(student.name);
 //@TODO: SHOW looping of objects 
 
 //getting the keys of an object as an array
-//console.log(student.keys().toArray());
+console.log(Object.keys(student));
 
 //getting the values of an object as an array   
-//console.log(student.values().toArray());
+console.log(Object.values(student));
 
 //getting the entries of an object as an array
-//console.log(student.entries().toArray());
+console.log(Object.entries(student));
 
 
 
