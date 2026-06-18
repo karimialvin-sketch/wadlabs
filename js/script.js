@@ -123,8 +123,8 @@ let bbit_2b = [
 
 ];
 // print out the  names of all students in bbit_2busing a loop
-bbit_2b.forEach(function (student) { 
-console.log(student.name);
+bbit_2b.forEach(function (student) {
+    console.log(student.name);
 });
 //@TODO: SHOW looping of objects 
 
@@ -145,7 +145,7 @@ console.log(document);
 const heading = document.querySelector('#mainHeading');
 console.log(heading);
 
-const previewImage =document.querySelector('img');
+const previewImage = document.querySelector('img');
 console.log(previewImage);
 
 const aboutsection = document.querySelector('#about');
@@ -155,7 +155,7 @@ console.log(aboutsection);
 //all sections 
 const allsections = document.querySelectorAll('section');
 console.log(allsections);
-const allnavlinks =document.querySelectorAll('nav a');
+const allnavlinks = document.querySelectorAll('nav a');
 console.log(allnavlinks);
 
 
@@ -166,6 +166,53 @@ let aboutparagraph = document.querySelector('#about p');
 //changing  its text
 aboutparagraph.textContent = " this text was changed!";
 aboutparagraph.style.color = "red";
+
+//setting/ setter - updating the page from js 
+
+// via the dom 
+previewImage.setAttribute("title", " New title of image");
+previewImage.setAttribute("alt", " New alternative text for the image");
+console.log(previewImage.alt);
+console.log(previewImage.title);
+
+//event handling- events(user events - click , key events ,scroll
+
+
+// get the element of the interset - button with an id of changeTextBtn
+
+let changeTextBtn = document.querySelector('#changeTextBtn');
+let demoText = document.querySelector('#demoText');
+
+
+changeTextBtn.addEventListener("click", function (event) {
+    console.log("Someone clicked me !");
+
+    demoText.textContent = "I have been changed when you clicked";
+    demoText.style.color = "orange";
+    demoText.style.fontSize = "16px";
+});
+
+/// use case 2
+let highlightSectionsBtn = document.querySelector('#highlightSectionsBtn');
+highlightSectionsBtn.addEventListener("click", function (event) {
+
+    document.querySelector("#about").classList.toggle("section-highlight");
+
+
+    // highlight all the sections
+    document.querySelectorAll("section").forEach(function (section) {
+        section.classList.toggle("section-highlight");
+    });
+});
+
+
+//get the  textbox with id nameInput
+document.querySelector('#nameInput').addEventListener("input", function(event){
+document.querySelector("#nameOutput").textContent=
+"Hello ,  " + document.querySelector("#nameInput").value +" !";
+})
+
+
 
 
 
